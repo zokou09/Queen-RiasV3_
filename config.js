@@ -7,8 +7,6 @@ module.exports = {
 
     ownerNumber: process.env.OWNER_NUMBER || "2348165846414", // Your WhatsApp number
 
-    sudo: process.env.SUDO ? process.env.SUDO.split(",") : ["2348165846414"," 2347042081220"], // People Who can use the bot even in Private mode
-
     mode: process.env.MODE || "public", // Bot mode: 'public' or 'private'
 
     region: process.env.REGION || "Nigeria", // Region
@@ -31,5 +29,5 @@ module.exports = {
 
     sessionId: process.env.SESSION_ID || "", // Add Your Session ID here
 
-    autoRejectEnabled: process.env.AUTO_REJECT_ENABLED === "true", // Auto-reject calls feature (true or false)
+    autoRejectEnabled: process.env.AUTO_REJECT_ENABLED || "false", // Auto-reject calls feature (true or false)
 };
