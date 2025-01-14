@@ -19,7 +19,7 @@ module.exports = {
 
     timeZone: process.env.TIME_ZONE || "Africa/Lagos", // Time zone
 
-    presenceStatus: process.env.PRESENCE_STATUS || "recording", // Bot presence status
+    presenceStatus: process.env.PRESENCE_STATUS || "available", // Bot presence status
 
     autoRead: process.env.AUTO_READ === "true", // Auto-read messages (true or false)
 
