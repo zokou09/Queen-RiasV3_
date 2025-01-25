@@ -1,4 +1,4 @@
-name: whatsapp-bot
+name: Queen-RiasV3_
 services:
   - name: whatsapp-bot-service
     type: web

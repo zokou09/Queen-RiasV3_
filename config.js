@@ -1,33 +1,28 @@
-require("dotenv").config(); // Load environment variables
+const fs = require("fs"); 
+require("dotenv").config();
 
 module.exports = {
-    prefix: process.env.PREFIX || ".", // Command prefix
-
-    ownerName: process.env.OWNER_NAME || "Toxxic-Boy", // Owner name
-
-    ownerNumber: process.env.OWNER_NUMBER || "2348165846414", // Your WhatsApp number
-
-    mode: process.env.MODE || "public", // Bot mode: 'public' or 'private'
-
-    region: process.env.REGION || "Nigeria", // Region
-
-    botName: process.env.BOT_NAME || "Rias Gremory V3", // Bot name
-
-    exifPack: process.env.EXIF_PACK || "RIAS V3 LOVES", // Sticker pack name
-
-    exifAuthor: process.env.EXIF_AUTHOR || "Toxxic", // Author of the sticker pack
-
-    timeZone: process.env.TIME_ZONE || "Africa/Lagos", // Time zone
-
-    presenceStatus: process.env.PRESENCE_STATUS || "available", // Bot presence status
-
-    autoRead: process.env.AUTO_READ === "true", // Auto-read messages (true or false)
-
-    autoViewStatus: process.env.AUTO_VIEW_STATUS === "true", // Auto-view statuses (true or false)
-
-    autoReact: process.env.AUTO_REACT === "true", // Auto-react (true or false)
-
-    sessionId: process.env.SESSION_ID || "", // Add Your Session ID here
-
-    autoRejectEnabled: process.env.AUTO_REJECT_ENABLED || "false", // Auto-reject calls feature (true or false)
+    prefix: process.env.PREFIX || ".",
+    ownerName: process.env.OWNER_NAME || "Toxxic-Boy",
+    ownerNumber: process.env.OWNER_NUMBER || "2348165846414",
+    mode: process.env.MODE || "public",
+    region: process.env.REGION || "Nigeria",
+    botName: process.env.BOT_NAME || "Rias Gremory V3",
+    exifPack: process.env.EXIF_PACK || "RIAS V3 LOVES",
+    exifAuthor: process.env.EXIF_AUTHOR || "Toxxic",
+    timeZone: process.env.TIME_ZONE || "Africa/Lagos",
+    presenceStatus: process.env.PRESENCE_STATUS || "unavailable",
+    autoRead: process.env.AUTO_READ === "true",
+    autoViewStatus: process.env.AUTO_VIEW_STATUS === "true",
+    autoReact: process.env.AUTO_REACT === "true",
+    sessionId: process.env.SESSION_ID || "",
+    autoRejectEnabled: process.env.AUTO_REJECT_ENABLED || "false",
 };
+
+let file = require.resolve(__filename); 
+fs.watchFile(file, () => {
+    fs.unwatchFile(file); 
+    console.log(`Update '${__filename}'`); 
+    delete require.cache[file];
+    require(file); 
+});
