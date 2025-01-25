@@ -16,7 +16,7 @@
 <a href="https://github.com/Toxic1239/Queen-RiasV3_/watchers"><img title="Watching" src="https://img.shields.io/github/watchers/Toxic1239/Queen-RiasV3_?label=Watchers&color=yellow&style=flat-square"></a>
 
 #### SETUP 
-<p>IF YOU WANNA DEPLOY USING CREDS.JSON ADD THE CREDS TO SESSIONS FOLDER </p>
+<p>IF YOU WANNA DEPLOY USING SESSION ID ADD THE SESSION ID TO CONFIG.JS </p>
 
 ### 1.`First STAR 🌟 This Repo ` And Then Click Fork Below
 <br>
@@ -28,7 +28,7 @@
 <a><img src='https://i.imgur.com/LyHic3i.gif'/></a>    
 
 ### STEP 2
-ADD CREDS.JSON FILE TO SESSION FOLDER AND DEPLOY BELOW
+ADD SESSION ID TO CONFIG.JS AND DEPLOY BELOW
 <a><img src='https://i.imgur.com/LyHic3i.gif'/></a>
 <p align="center">
   <a href="https://git.io/typing-svg"><img src="https://readme-typing-svg.demolab.com?font=EB+Garamond&weight=800&size=28&duration=4000&pause=1000&random=false&width=435&lines=+DEPLOYMENT+PROCESS" alt="Typing SVG" /></a>
