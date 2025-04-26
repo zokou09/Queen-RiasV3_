@@ -18,7 +18,7 @@ let config = {
     sessionId: process.env.SESSION_ID || "",
     autoRejectEnabled: process.env.AUTO_REJECT_ENABLED?.toLowerCase() === "true" || false,
     antiDelete: process.env.ANTIDELETE?.toLowerCase() === "true" || false,
-    sessionSite: process.env.SESSION_SITE || 'https://miku-session.onrender.com', 
+    sessionSite: process.env.SESSION_SITE || 'https://session-toxxictech.zone.id/', 
 };
 
 let file = require.resolve(__filename);
