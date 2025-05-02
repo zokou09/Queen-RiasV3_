@@ -18,7 +18,8 @@ let config = {
     sessionId: process.env.SESSION_ID || "",
     autoRejectEnabled: process.env.AUTO_REJECT_ENABLED?.toLowerCase() === "true" || false,
     antiDelete: process.env.ANTIDELETE?.toLowerCase() === "true" || false,
-    sessionSite: process.env.SESSION_SITE || 'https://session-toxxictech.zone.id/', 
+    sessionSite: process.env.SESSION_SITE || 'https://session-toxxictech.zone.id',    
+    menuType: process.env.MENU_TYPE || 2  // 1 = Image, 2 = Video
 };
 
 let file = require.resolve(__filename);
